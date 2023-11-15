@@ -1,5 +1,11 @@
-size_one_book = 4*25*50*100   #Объем одного учебника в байтах
-size_floppy_bytes = 1.44*1024*1024   #Перевод 1.44Мб в байты
+size_symbol = 4
+symbol_of_lines = 25
+lines_in_pages = 50
+pages_in_book = 100
+size_floppy_mb = 1.44
+
+size_one_book = size_symbol*symbol_of_lines*lines_in_pages*pages_in_book
+size_floppy_bytes = size_floppy_mb*1024*1024
 result = int(size_floppy_bytes/size_one_book)
 
 print("Количество книг, помещающихся на дискету:", result)
